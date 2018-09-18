@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="Panel" prefHeight="570.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="database.project.ManagerHomePageController">
+   <children>
+      <ImageView fitHeight="570.0" fitWidth="1100.0" pickOnBounds="true">
+         <image>
+            <Image url="@/Icons/bg.png" />
+         </image>
+      </ImageView>
+      <VBox fx:id="Group1" layoutX="125.0" layoutY="201.0" spacing="8.0">
+         <children>
+            <AnchorPane fx:id="Settings" prefHeight="160.0" prefWidth="130.0" styleClass="menus" stylesheets="@style.css">
+               <children>
+                  <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="25.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/Icons/Settings.png" />
+                     </image>
+                  </ImageView>
+                  <VBox alignment="CENTER" layoutX="3.0" layoutY="101.0" prefHeight="50.0" prefWidth="122.0">
+                     <children>
+                        <Label text="Settings">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="About" prefHeight="160.0" prefWidth="130.0" styleClass="menus" stylesheets="@style.css">
+               <children>
+                  <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="25.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/Icons/About.png" />
+                     </image>
+                  </ImageView>
+                  <VBox alignment="CENTER" layoutX="3.0" layoutY="101.0" prefHeight="50.0" prefWidth="122.0">
+                     <children>
+                        <Label text="About">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <VBox fx:id="Group2" layoutX="305.0" layoutY="181.0" spacing="8.0">
+         <children>
+            <AnchorPane fx:id="ViewDB" prefHeight="160.0" prefWidth="130.0" styleClass="menus" stylesheets="@style.css">
+               <children>
+                  <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="25.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/Icons/Show.png" />
+                     </image>
+                  </ImageView>
+                  <VBox alignment="CENTER" layoutX="3.0" layoutY="101.0" prefHeight="50.0" prefWidth="122.0">
+                     <children>
+                        <Label text="Show">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="Database">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="GenGraph" prefHeight="160.0" prefWidth="130.0" styleClass="menus" stylesheets="@style.css">
+               <children>
+                  <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="25.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/Icons/Graph.png" />
+                     </image>
+                  </ImageView>
+                  <VBox alignment="CENTER" layoutX="3.0" layoutY="101.0" prefHeight="50.0" prefWidth="122.0">
+                     <children>
+                        <Label text="Generate">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="Statistics Graph">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <VBox fx:id="Group3" layoutX="485.0" layoutY="161.0" spacing="8.0">
+         <children>
+            <AnchorPane fx:id="BackupDB" prefHeight="160.0" prefWidth="130.0" styleClass="menus" stylesheets="@style.css">
+               <children>
+                  <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="25.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/Icons/BackupData.png" />
+                     </image>
+                  </ImageView>
+                  <VBox alignment="CENTER" layoutX="3.0" layoutY="101.0" prefHeight="50.0" prefWidth="122.0">
+                     <children>
+                        <Label text="Backup">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="Database">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="GenReport" prefHeight="160.0" prefWidth="130.0" styleClass="menus" stylesheets="@style.css">
+               <children>
+                  <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="25.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/Icons/Reports.png" />
+                     </image>
+                  </ImageView>
+                  <VBox alignment="CENTER" layoutX="3.0" layoutY="101.0" prefHeight="50.0" prefWidth="122.0">
+                     <children>
+                        <Label text="Generate">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="Report">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <VBox fx:id="Group4" layoutX="845.0" layoutY="121.0" spacing="8.0">
+         <children>
+            <AnchorPane fx:id="AddCustmor" prefHeight="160.0" prefWidth="130.0" styleClass="menus" stylesheets="@style.css">
+               <children>
+                  <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="25.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/Icons/AddUser.png" />
+                     </image>
+                  </ImageView>
+                  <VBox alignment="CENTER" layoutX="3.0" layoutY="101.0" prefHeight="50.0" prefWidth="122.0">
+                     <children>
+                        <Label text="Add">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="new Custmor">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="Find_Replace" prefHeight="160.0" prefWidth="130.0" styleClass="menus" stylesheets="@style.css">
+               <children>
+                  <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="25.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/Icons/Find&amp;Edit_Custmor.png" />
+                     </image>
+                  </ImageView>
+                  <VBox alignment="CENTER" layoutX="3.0" layoutY="101.0" prefHeight="50.0" prefWidth="122.0">
+                     <children>
+                        <Label text="Find &amp; Edit">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="Custmors">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <VBox fx:id="Group41" layoutX="665.0" layoutY="141.0" spacing="8.0">
+         <children>
+            <AnchorPane fx:id="AddStaff" prefHeight="160.0" prefWidth="130.0" styleClass="menus" stylesheets="@style.css">
+               <children>
+                  <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="25.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/Icons/AddEmployee.png" />
+                     </image>
+                  </ImageView>
+                  <VBox alignment="CENTER" layoutX="3.0" layoutY="101.0" prefHeight="50.0" prefWidth="122.0">
+                     <children>
+                        <Label text="Add">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="new Staff">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="Find_ReplaceEM" prefHeight="160.0" prefWidth="130.0" styleClass="menus" stylesheets="@style.css">
+               <children>
+                  <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="25.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/Icons/Find&amp;Edit_Employee.png" />
+                     </image>
+                  </ImageView>
+                  <VBox alignment="CENTER" layoutX="3.0" layoutY="101.0" prefHeight="50.0" prefWidth="122.0">
+                     <children>
+                        <Label text="Find &amp; Edit">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="Staffs">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="1066.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/Icons/exit.png" />
+         </image>
+      </ImageView>
+      <Rectangle fx:id="close" arcHeight="5.0" arcWidth="5.0" fill="#ff000080" height="47.0" layoutX="1050.0" opacity="0.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="1016.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/Icons/Minimize.png" />
+         </image>
+      </ImageView>
+      <Rectangle fx:id="min" arcHeight="5.0" arcWidth="5.0" fill="#0203024d" height="47.0" layoutX="1001.0" opacity="0.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+      <JFXButton fx:id="Popup" layoutX="989.0" layoutY="474.0" prefHeight="70.0" prefWidth="70.0" style="-fx-background-radius: 60; -fx-border-radius: 60;" styleClass="floating-button" stylesheets="@style.css" text="Logout" />
+   </children>
+</AnchorPane>

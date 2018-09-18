@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.validation.RequiredFieldValidator?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="Panel" prefHeight="546.0" prefWidth="842.0" style="-fx-background-color: #008975;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="database.project.LoginController">
+   <children>
+      <Separator layoutX="192.0" layoutY="1.0" orientation="VERTICAL" prefHeight="546.0" prefWidth="12.0" />
+      <JFXTextField fx:id="UserField" alignment="TOP_LEFT" labelFloat="true" layoutX="359.0" layoutY="201.0" prefHeight="30.0" prefWidth="370.0" promptText="    User Name" style="-fx-text-fill: #1affa3; -fx-prompt-text-fill: #ffffff;" unFocusColor="WHITE" />
+      <Label layoutX="697.0" layoutY="512.0" text="Having A Trouble ?" textFill="WHITE" underline="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <JFXPasswordField fx:id="PasswordField" alignment="TOP_LEFT" labelFloat="true" layoutX="359.0" layoutY="297.0" prefHeight="30.0" prefWidth="370.0" promptText="    Password" style="-fx-text-fill: #1affa3; -fx-prompt-text-fill: #ffffff;" unFocusColor="WHITE" />
+      <JFXButton fx:id="signin" layoutX="546.0" layoutY="377.0" prefHeight="43.0" prefWidth="183.0" style="-fx-background-color: #86EFAD;" text="Sign in">
+         <font>
+            <Font name="Arial Unicode MS" size="20.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="43.0" fitWidth="41.0" layoutX="318.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/Icons/user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="43.0" fitWidth="41.0" layoutX="318.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/Icons/password.png" />
+         </image>
+      </ImageView>
+      <CheckBox alignment="BOTTOM_CENTER" contentDisplay="BOTTOM" layoutX="328.0" layoutY="399.0" mnemonicParsing="false" text="Remember me ?" textFill="WHITE" underline="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </CheckBox>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="699.0" layoutY="196.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/Icons/info.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="699.0" layoutY="292.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/Icons/info.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView blendMode="MULTIPLY" disable="true" fitHeight="30.0" fitWidth="30.0" layoutX="687.0" layoutY="384.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/Icons/login.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DISAPPEAR" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="close" fitHeight="20.0" fitWidth="20.0" layoutX="803.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/Icons/exit.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="minimize" fitHeight="20.0" fitWidth="20.0" layoutX="760.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/Icons/Minimize.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <AnchorPane prefHeight="547.0" prefWidth="195.0" style="-fx-background-color: #00AA8D;">
+         <children>
+            <Label layoutX="66.0" layoutY="35.0" prefHeight="477.0" prefWidth="64.0" text="TRUST" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font size="62.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <RequiredFieldValidator layoutX="375.0" layoutY="181.0" message="Text is required here" src="UserField" />
+   </children>
+</AnchorPane>

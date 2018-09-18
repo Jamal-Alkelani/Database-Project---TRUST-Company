@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="690.0" prefWidth="1408.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="database.project.CarSpecTableViewController">
+   <children>
+      <TableView fx:id="CarSpecTableView" prefHeight="610.0" prefWidth="1408.0" tableMenuButtonVisible="true">
+         <columns>
+            <TableColumn fx:id="col1" prefWidth="150.0" text="Reference Key" />
+            <TableColumn fx:id="col14" prefWidth="150.0" text="License No." />
+            <TableColumn fx:id="col15" prefWidth="147.0" text="Chassis No." />
+            <TableColumn fx:id="col16" prefWidth="147.0" text="Plate No." />
+            <TableColumn fx:id="col17" prefWidth="147.0" text="Fuel Type" />
+            <TableColumn fx:id="col18" prefWidth="147.0" text="Engine No." />
+            <TableColumn fx:id="col19" prefWidth="147.0" text="Purchase" />
+            <TableColumn fx:id="col20" prefWidth="147.0" text="Car Brand" />
+            <TableColumn fx:id="col21" prefWidth="147.0" text="Model" />
+            <TableColumn fx:id="col22" prefWidth="147.0" text="Manuf. Year" />
+            <TableColumn fx:id="col23" prefWidth="147.0" text="No. Of Doors" />
+            <TableColumn fx:id="col24" prefWidth="147.0" text="Lic. Category" />
+            <TableColumn fx:id="col25" prefWidth="147.0" text="Prev. Accidents" />
+            <TableColumn fx:id="col26" prefWidth="147.0" text="Weight" />
+            <TableColumn fx:id="col27" prefWidth="147.0" text="Power" />
+            <TableColumn fx:id="col28" prefWidth="147.0" text="Color" />
+            <TableColumn fx:id="col29" prefWidth="147.0" text="Alarm?" />
+            <TableColumn fx:id="col30" prefWidth="147.0" text="Turbo?" />
+            <TableColumn fx:id="col32" prefWidth="147.0" text="Insurance Cost" />
+            <TableColumn fx:id="col33" prefWidth="147.0" text="DOSI" />
+            <TableColumn fx:id="col34" prefWidth="147.0" text="DOEI" />
+         </columns>
+      </TableView>
+      <JFXTextField fx:id="SearchFor" layoutX="77.0" layoutY="638.0" prefHeight="29.0" prefWidth="464.0" promptText="Search For. . ." />
+      <Label layoutX="14.0" layoutY="641.0" text="Search">
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.MaskerPane?>
+
+<AnchorPane id="AnchorPane" fx:id="Panel" prefHeight="563.0" prefWidth="1115.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="database.project.CarSpecController">
+   <children>
+      <Label layoutX="102.0" layoutY="63.0" text="Reference Key" textFill="RED" />
+      <TextField fx:id="ReferenceKeytxt" editable="false" layoutX="197.0" layoutY="58.0" prefHeight="31.0" prefWidth="349.0" style="-fx-background-color: #d9d9d9;" />
+      <Label layoutX="102.0" layoutY="111.0" text="License No." />
+      <TextField fx:id="Licensetxt" layoutX="197.0" layoutY="105.0" prefHeight="31.0" prefWidth="349.0" />
+      <Label layoutX="102.0" layoutY="361.0" text="Purchase" />
+      <TextField fx:id="Chassistxt" layoutX="197.0" layoutY="158.0" prefHeight="31.0" prefWidth="349.0" />
+      <Label layoutX="604.0" layoutY="161.0" text="Lic. Category" />
+      <Label layoutX="102.0" layoutY="211.0" text="Plate No." />
+      <Label layoutX="102.0" layoutY="261.0" text="Fuel Type" />
+      <Label layoutX="102.0" layoutY="311.0" text="Engine No." />
+      <TextField fx:id="PlateNotxt" layoutX="197.0" layoutY="206.0" prefHeight="31.0" prefWidth="349.0" />
+      <TextField fx:id="FuelTypetext" layoutX="197.0" layoutY="258.0" prefHeight="31.0" prefWidth="349.0" />
+      <TextField fx:id="Enginetxt" layoutX="197.0" layoutY="306.0" prefHeight="31.0" prefWidth="349.0" />
+      <Label layoutX="102.0" layoutY="161.0" text="Chassis No." />
+      <Label layoutX="99.0" layoutY="414.0" text="Car Brand" />
+      <Label layoutX="102.0" layoutY="461.0" text="Model" />
+      <Label layoutX="102.0" layoutY="511.0" text="Manuf. Year" />
+      <Label layoutX="604.0" layoutY="111.0" text="No. Of Doors" />
+      <Label layoutX="603.0" layoutY="316.0" text="Power" />
+      <Label layoutX="606.0" layoutY="366.0" text="Color" />
+      <Label layoutX="606.0" layoutY="263.0" text="Weight" />
+      <Label layoutX="604.0" layoutY="414.0" text="Passengers Covered" />
+      <Label layoutX="604.0" layoutY="211.0" text="Prev. Accidents" />
+      <TextField fx:id="Purchasetxt" layoutX="197.0" layoutY="356.0" prefHeight="31.0" prefWidth="349.0" />
+      <TextField fx:id="CarBrandtxt" layoutX="197.0" layoutY="409.0" prefHeight="31.0" prefWidth="349.0" />
+      <TextField fx:id="Modeltxt" layoutX="197.0" layoutY="457.0" prefHeight="31.0" prefWidth="349.0" />
+      <TextField fx:id="Manuftxt" layoutX="197.0" layoutY="509.0" prefHeight="31.0" prefWidth="349.0" />
+      <Separator layoutX="565.0" layoutY="117.0" orientation="VERTICAL" prefHeight="418.0" prefWidth="16.0" />
+      <TextField fx:id="NoOfDoorstxt" layoutX="707.0" layoutY="105.0" prefHeight="31.0" prefWidth="378.0" />
+      <TextField fx:id="LicCategorytxt" layoutX="707.0" layoutY="158.0" prefHeight="31.0" prefWidth="378.0" />
+      <TextField fx:id="PrevAccidentstxt" layoutX="707.0" layoutY="206.0" prefHeight="31.0" prefWidth="378.0" />
+      <TextField fx:id="Weighttxt" layoutX="707.0" layoutY="258.0" prefHeight="31.0" prefWidth="378.0" promptText="In Kilograms" />
+      <Separator layoutX="115.0" layoutY="347.0" prefHeight="3.0" prefWidth="412.0" />
+      <Separator layoutX="630.0" layoutY="249.0" prefHeight="3.0" prefWidth="433.0" />
+      <Separator layoutY="95.0" prefHeight="3.0" prefWidth="1115.0" />
+      <TextField fx:id="Powertxt" layoutX="707.0" layoutY="306.0" prefHeight="31.0" prefWidth="378.0" promptText="In Horse" />
+      <JFXCheckBox fx:id="AlarmCB" layoutX="869.0" layoutY="366.0" text="Alarm?" />
+      <Separator layoutX="630.0" layoutY="399.0" prefHeight="3.0" prefWidth="433.0" />
+      <JFXCheckBox fx:id="TurboCB" layoutX="999.0" layoutY="366.0" text="Turbo?" />
+      <TextField fx:id="Passengerstxt" layoutX="742.0" layoutY="409.0" prefHeight="31.0" prefWidth="337.0" />
+      <AnchorPane layoutY="-3.0" prefHeight="567.0" prefWidth="70.0" style="-fx-background-color: #0080ff;">
+         <children>
+            <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="22.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/Icons/Menu.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="22.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/Icons/Home.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="22.0" layoutY="141.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/Icons/Search.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="22.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/Icons/Show2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="22.0" layoutY="275.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/Icons/Settings2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="22.0" layoutY="342.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/Icons/Logout.png" />
+               </image>
+            </ImageView>
+            <Rectangle fx:id="Searchbtn" arcHeight="5.0" arcWidth="5.0" fill="#0203024d" height="63.0" layoutX="1.0" layoutY="127.0" opacity="0.0" stroke="WHITE" strokeType="INSIDE" width="68.0" />
+            <Rectangle fx:id="Homebtn" arcHeight="5.0" arcWidth="5.0" fill="#0203024d" height="69.0" layoutX="1.0" layoutY="55.0" opacity="0.0" stroke="WHITE" strokeType="INSIDE" width="68.35" />
+            <Rectangle fx:id="ShowDBbtn" arcHeight="5.0" arcWidth="5.0" fill="#0203024d" height="63.0" layoutX="2.0" layoutY="193.0" opacity="0.0" stroke="WHITE" strokeType="INSIDE" width="67.0" />
+            <Rectangle fx:id="Settingsbtn" arcHeight="5.0" arcWidth="5.0" fill="#0203024d" height="63.0" layoutX="2.0" layoutY="260.0" opacity="0.0" stroke="WHITE" strokeType="INSIDE" width="67.0" />
+            <Rectangle fx:id="Logoutbtn" arcHeight="5.0" arcWidth="5.0" fill="#0203024d" height="63.0" layoutX="2.0" layoutY="327.0" opacity="0.0" stroke="WHITE" strokeType="INSIDE" width="67.0">
+               <effect>
+                  <Glow level="1.0" />
+               </effect>
+            </Rectangle>
+            <Separator layoutX="15.0" layoutY="122.0" prefHeight="3.0" prefWidth="43.0" />
+            <Separator layoutX="14.0" layoutY="189.0" prefHeight="3.0" prefWidth="43.0" />
+            <Separator layoutX="15.0" layoutY="256.0" prefHeight="3.0" prefWidth="43.0" />
+            <Separator layoutX="15.0" layoutY="323.0" prefHeight="3.0" prefWidth="43.0" />
+            <Separator layoutX="15.0" layoutY="390.0" prefHeight="3.0" prefWidth="43.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="57.0" prefHeight="50.0" prefWidth="1058.0" style="-fx-background-color: #0080ff;">
+         <children>
+            <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="21.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/Icons/BackArrow.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="1021.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/Icons/exit.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="971.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/Icons/Minimize.png" />
+               </image>
+            </ImageView>
+            <Rectangle fx:id="Closebtn" arcHeight="5.0" arcWidth="5.0" fill="#ff000080" height="47.0" layoutX="1008.0" opacity="0.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Minibtn" arcHeight="5.0" arcWidth="5.0" fill="#0203024d" height="47.0" layoutX="959.0" opacity="0.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="Backbtn" arcHeight="5.0" arcWidth="5.0" fill="#0022664d" height="47.0" layoutX="14.0" layoutY="2.0" opacity="0.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="575.0" layoutY="63.0" text="Issue Date" />
+      <TextField fx:id="IssueDate" editable="false" layoutX="656.0" layoutY="58.0" prefHeight="31.0" prefWidth="148.0" style="-fx-background-color: #d9d9d9;" />
+      <ComboBox fx:id="ColorCombobox" layoutX="707.0" layoutY="356.0" prefHeight="31.0" prefWidth="133.0" promptText="Color not Selected" />
+      <JFXButton fx:id="Savebtn" layoutX="965.0" layoutY="58.0" prefHeight="31.0" prefWidth="120.0" style="-fx-background-color: #FF6D00;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="ClearAllbtn" layoutX="825.0" layoutY="58.0" prefHeight="31.0" prefWidth="120.0" style="-fx-background-color: #FF3D00;" text="Clear All" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <TextField fx:id="Costtext" layoutX="742.0" layoutY="463.0" prefHeight="31.0" prefWidth="337.0" />
+      <MaskerPane fx:id="Masker" layoutX="70.0" layoutY="50.0" prefHeight="514.0" prefWidth="1045.0" visible="false" />
+      <Label layoutX="612.0" layoutY="470.0" text="Cost" />
+   </children>
+</AnchorPane>

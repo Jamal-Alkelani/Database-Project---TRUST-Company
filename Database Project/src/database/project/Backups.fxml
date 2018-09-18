@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.Double?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="database.project.BackupsController">
+   <children>
+      <AnchorPane prefHeight="90.0" prefWidth="600.0" style="-fx-background-color: #0080ff;">
+         <children>
+            <Line endX="68.0" layoutX="125.0" layoutY="28.0" rotate="-135.0" startX="-10.0" stroke="#ff9800" strokeMiterLimit="1.0" strokeWidth="2.5">
+               <effect>
+                  <DropShadow color="#060b6f" />
+               </effect>
+            </Line>
+            <Line endX="234.0" layoutX="184.0" layoutY="56.0" startX="-1.0" stroke="#ff9800" strokeMiterLimit="1.0" strokeWidth="2.5">
+               <effect>
+                  <DropShadow color="#060b6f" />
+               </effect>
+            </Line>
+            <Label layoutX="189.0" layoutY="11.0" text="Backup Database" textFill="WHITE">
+               <font>
+                  <Font name="Bauhaus 93" size="28.0" />
+               </font>
+               <effect>
+                  <Reflection fraction="0.61" topOpacity="0.41" />
+               </effect>
+            </Label>
+            <Line endX="68.0" layoutX="418.0" layoutY="28.0" rotate="135.0" startX="-10.0" stroke="#ff9800" strokeMiterLimit="1.0" strokeWidth="2.5">
+               <effect>
+                  <DropShadow color="#060b6f" />
+               </effect>
+            </Line>
+            <ImageView fx:id="close" fitHeight="24.0" fitWidth="24.0" layoutX="569.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/Icons/closeW.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <Polygon fill="#0080ff" layoutX="81.0" layoutY="115.0" rotate="180.0" scaleX="0.5" scaleY="0.3" stroke="#0080ff" strokeType="INSIDE">
+        <points>
+          <Double fx:value="-50.0" />
+          <Double fx:value="40.0" />
+          <Double fx:value="50.0" />
+          <Double fx:value="40.0" />
+          <Double fx:value="0.0" />
+          <Double fx:value="-60.0" />
+        </points>
+      </Polygon>
+      <JFXButton alignment="CENTER" layoutX="366.0" layoutY="157.0" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: #00AA8D;" text="Backup" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="44.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/Icons/Backup.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="Arial Rounded MT Bold" size="28.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="35.0" layoutY="139.0" text="Databas Info" textFill="#726c6c" underline="true">
+         <font>
+            <Font name="Californian FB Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="200.0" text="Database Name:" textFill="#9e9696">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="240.0" text="Database Type:" textFill="#9e9696">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="280.0" text="Database User:" textFill="#9e9696">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="320.0" text="Database Version:" textFill="#9e9696">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="181.0" layoutY="200.0" text="Trust Company">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="181.0" layoutY="240.0" text="Mysiam">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="182.0" layoutY="280.0" text="Employee">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="196.0" layoutY="320.0" text="V 1.9.1">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <JFXButton alignment="CENTER" layoutX="366.0" layoutY="248.0" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: #FF9800;" text="Restore" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="44.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/Icons/Restore.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="Arial Rounded MT Bold" size="28.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
